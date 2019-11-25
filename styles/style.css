@@ -1,0 +1,161 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+body {
+  height: 100%;
+  background-color: rgba(109, 109, 89, 0.26);
+  font-family: 'Open Sans';
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+a{
+  color: #fff;
+}
+
+
+/********************************
+Plugin Hero Example
+********************************/
+
+.patch-button {
+  color: #FFF;
+  cursor: pointer;
+  font-size: 0.8em; 
+  font-size: 1.5em;
+  letter-spacing: 0;
+  line-height: 150px;
+}
+
+.patch-button:hover {
+  border: solid 3px #FFF;
+  line-height: 144px;
+}
+
+.patch-container {
+  background-color: #3d72a7;
+  border-radius: 5px;
+  color: #FFF;
+  margin: 4%;
+  overflow: auto;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+  zoom: 1;
+  max-width: 1300px; 
+}
+
+.patch-item {
+  background-color: #FFF;
+  border-radius: 4px;
+  float: left;
+  height: 150px;
+  margin: 0 0 2% 0;
+  width: 100%;
+  font-size: 19px;
+}
+
+.patch-panel {
+  background-color: #FFF;
+  border-radius: 4px;
+  color: #FFF;
+  display: none;
+  float: left;
+  font-size: 1.1em;
+  line-height: 28px;
+  min-height: 20px;
+  padding: 20px;
+  margin: 0 0 2% 0;
+  width: 100%;
+  text-align: left
+}
+
+[data-patch-panel='1'],
+[data-patch-panel='10'],
+[data-patch-panel='17'] {
+  background: #274374;
+}
+
+[data-patch-panel='2'],
+[data-patch-panel='5'],
+[data-patch-panel='12'],
+[data-patch-panel='8'] 
+{
+  background: #0F9FD6;
+}
+
+[data-patch-panel='6'],
+[data-patch-panel='9'],
+[data-patch-panel='4'] ,
+[data-patch-panel='13'] 
+{
+  background: #274374;
+}
+
+[data-patch-panel='3'],
+[data-patch-panel='15'],
+[data-patch-panel='16'] {
+  background:#274374;
+}
+
+[data-patch-panel='7'],
+[data-patch-panel='11'],
+[data-patch-panel='14'] {
+  background: #274374;
+}
+/********************************
+Media Queries
+********************************/
+
+@media only screen and (min-width: 550px) {
+  h2 {
+    font-size: 3.3rem;
+  }
+  .patch-item {
+    margin: 1%;
+    width: 48%;
+  }
+  .patch-panel {
+    margin: 1%;
+    width: 98%;
+  }
+  .components {
+    margin: 1.5%;
+    width: 46%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .patch-container {
+    margin: 4% auto;
+  }
+  .patch-item {
+    margin: 0.6667%;
+    margin: calc(4% / 6);
+    width: 32%;
+  }
+  .patch-panel {
+    margin: 0.6667%;
+    margin: calc(4% / 6);
+    width: 98.6666%;
+    width: calc(100% - (4% / 6) * 2);
+  }
+  .resize {
+    margin: 50px auto -2%;
+  }
+  .wide {
+    margin: 0.6667%;
+    margin: calc(4% / 6);
+    width: 48.6666%;
+    width: calc(50% - (4% / 6) * 2);
+  }
+  .thin {
+    width: 23.6666%;
+    width: calc(25% - (4% / 6) * 2);
+  }
+}
+
